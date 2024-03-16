@@ -1,8 +1,8 @@
 Mammography plugin for Orthanc
 ==============================
 
-This plugin for [Orthanc](https://orthanc.uclouvain.be/) adds a deep
-learning algorithm to detect masses in mammograms.  The inference
+This plugin for [Orthanc](https://orthanc.uclouvain.be/) adds a **deep
+learning algorithm to detect masses in mammograms**.  The inference
 algorithm produces DICOM-SR (structured reports) instances that are
 stored inside Orthanc.  The DICOM-SR instance can then be displayed
 using a version of the [Stone Web viewer for
