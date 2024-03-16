@@ -5,6 +5,9 @@ This plugin for [Orthanc](https://orthanc.uclouvain.be/) adds a deep learning al
 The inference algorithm produces DICOM-SR (structured reports) instances that are stored inside Orthanc.
 The DICOM-SR instance can then be displayed using a version of the [Stone Web viewer for Orthanc](https://www.orthanc-server.com/static.php?page=stone-web-viewer).
 
+This plugin is copyrighted by the UCLouvain university, under the AGPLv3+ license.
+It is a deliverable of the research lab led by [Sébastien Jodogne](https://info.ucl.ac.be/~sjodogne/).
+
 ![Example](viewer/2024-03-09-FirstDicomSR.png)
 
 As of 2024-03-16, a scientific paper associated with this plugin is under review.
@@ -79,7 +82,8 @@ Usage
 
 Two samples images from the [CBIS-DDSM dataset](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629)
 are available in the [`./sample-images/` folder](./sample-images/).
-[Upload them to Orthanc](https://orthanc.uclouvain.be/book/users/cookbook.html#uploading-dicom-files).
+
+[Upload DICOM images of mammograms to Orthanc](https://orthanc.uclouvain.be/book/users/cookbook.html#uploading-dicom-files).
 
 Using the built-in [Orthanc Explorer](http://localhost:8042/app/explorer.html) interface of Orthanc,
 go down in the DICOM hierarchy until you reach a DICOM instance whose modality is `MG` (mammogram).
