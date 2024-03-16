@@ -1,2 +1,5 @@
-venv/
 *~
+OrthancStorage/
+__pycache__/
+config.json
+venv/
