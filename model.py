@@ -139,7 +139,7 @@ def load_retina_net():
     }
 
 
-def apply_model_to_dicom(model, dicom, rescale_boxes=True):
+def dicom_to_tensor(dicom, min_size):
     assert(len(dicom.pixel_array.shape) == 2)
 
     #Normalize the value scale to 0-255 (Useful for some processing steps)
@@ -149,19 +149,24 @@ def apply_model_to_dicom(model, dicom, rescale_boxes=True):
     image_tensor = torch.tensor(im_array.astype(np.float32).transpose(2, 0, 1))
 
     #Resize longest side to 2048 (with same ratio) and normalize
-    image_tensor = ResizeBetter(model['min_size']) (image_tensor)
+    image_tensor = ResizeBetter(min_size) (image_tensor)
 
     std = torch.std(image_tensor)
     mean = torch.mean(image_tensor)
     image_tensor = torch.sub(image_tensor, mean )
     image_tensor = torch.div(image_tensor, std)
 
-    output = model['eval'] ([image_tensor])
+    assert(len(image_tensor.shape) == 3)
+
+    return image_tensor
+
+
+def apply_model_to_dicom(model, dicom, rescale_boxes=True):
+    image_tensor = dicom_to_tensor(dicom, model['min_size'])
+    output = model['eval'] ([ image_tensor ])
 
     assert(len(output) == 1)
     output = output[0]
-
-    assert(len(image_tensor.shape) == 3)
 
     if rescale_boxes:
         originalWidth = dicom.pixel_array.shape[1]
