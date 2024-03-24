@@ -14,11 +14,6 @@ AGPLv3+ license.  It is a deliverable of the research lab led by
 
 ![Example](viewer/2024-03-09-FirstDicomSR.png)
 
-As of 2024-03-16, a scientific paper associated with this plugin is
-under review.  Once accepted, this paper will provide technical
-details about the deep learning algorithm that is shipped within this
-plugin.
-
 
 Setup
 -----
