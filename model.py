@@ -40,11 +40,11 @@ MODELS_DIR = os.path.join(SCRIPT_DIR, 'models')
 os.makedirs(MODELS_DIR, exist_ok = True)
 
 download.get(os.path.join(MODELS_DIR, 'resnet50-11ad3fa6.pth'),
-             'https://github.com/jodogne/orthanc-mammography/raw/master/models/resnet50-11ad3fa6.pth',
+             'https://orthanc.uclouvain.be/downloads/cross-platform/orthanc-mammography/models/2024-03-08-resnet50-11ad3fa6.pth',
              102540417, '012571d812f34f8442473d8b827077b5')
 
 download.get(os.path.join(MODELS_DIR, 'retina_res50_trained_08_03.pth'),
-             'https://github.com/jodogne/orthanc-mammography/raw/master/models/retina_res50_trained_08_03.pth',
+             'https://orthanc.uclouvain.be/downloads/cross-platform/orthanc-mammography/models/2024-03-08-retina_res50_trained_08_03.pth',
              145735292, '53aa159ea0b83234d767aacb43619748')
 
 

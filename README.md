@@ -18,28 +18,18 @@ AGPLv3+ license.  It is a deliverable of the research lab led by
 Setup
 -----
 
-Before cloning this repository to your computer, make sure that the
-[Git extension for versioning large files](https://git-lfs.com/) is
-installed.  Under Debian/Ubuntu distributions, this can be done by
-running:
-
-```
-$ sudo apt update
-$ sudo apt install git-lfs
-```
-
-Also, make sure that Python 3 is installed with support of [virtual
-environments](https://docs.python.org/3/library/venv.html):
+Make sure that Python 3 is installed with support of [virtual
+environments](https://docs.python.org/3/library/venv.html). Under
+Debian/Ubuntu distributions, this can be done by running:
 
 ```
 $ sudo apt update
 $ sudo apt install python3 python3-venv
 ```
 
-Finally, you evidently have to [install
-Orthanc](https://www.orthanc-server.com/download.php).  The
-mammography plugin requires the following two plugins for Orthanc to
-be installed:
+Evidently, you also have to [install
+Orthanc](https://www.orthanc-server.com/download.php). The mammography
+plugin requires the two following plugins for Orthanc to be installed:
 
 * [Python plugin](https://orthanc.uclouvain.be/book/plugins/python.html).
 * [DICOMweb plugin](https://orthanc.uclouvain.be/book/plugins/dicomweb.html), if you want to use the DICOM-SR viewer.
