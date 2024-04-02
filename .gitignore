@@ -3,3 +3,11 @@ OrthancStorage/
 __pycache__/
 config.json
 venv/
+
+models/resnet50-11ad3fa6.pth
+models/retina_res50_trained_08_03.pth
+sample-images/P_00009_RIGHT_CC.dcm
+sample-images/P_00009_RIGHT_MLO.dcm
+sample-images/P_00021_LEFT_CC.dcm
+sample-images/P_00021_LEFT_MLO.dcm
+viewer/2024-03-15-StoneWebViewer-DICOM-SR.zip
