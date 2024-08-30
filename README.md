@@ -8,6 +8,25 @@ stored inside Orthanc.  The DICOM-SR instance can then be displayed
 using a version of the [Stone Web viewer for
 Orthanc](https://www.orthanc-server.com/static.php?page=stone-web-viewer).
 
+[Reference paper](https://ebooks.iospress.nl/doi/10.3233/SHTI240603),
+in the BibTeX format:
+
+```BibTeX
+@inproceedings{OrthancMIE2024,
+ title = {Integrated and Interoperable Platform for Detecting Masses on Mammograms},
+ author = {Chatzopoulos, Edouard and Jodogne, S\'ebastien},
+ booktitle = {34th Medical Informatics Europe Conference (MIE 2024)},
+ address = {Athens, Greece},
+ journal = {Studies in Health Technology and Informatics},
+ volume = {316},
+ pages = {1103-1107},
+ issn = {1879-8365},
+ doi = {10.3233/SHTI240603},
+ publisher = {{IOS} Press},
+ year = {2024}
+}
+```
+
 This plugin is copyrighted by the UCLouvain university, under the
 AGPLv3+ license.  It is a deliverable of the research lab led by
 [Sébastien Jodogne](https://info.ucl.ac.be/~sjodogne/).
