@@ -37,7 +37,7 @@ if venv != None:
 ## Install the Stone Web viewer
 ##
 
-STONE_VERSION = '2024-03-15-StoneWebViewer-DICOM-SR'
+STONE_VERSION = '2024-08-31-StoneWebViewer-DICOM-SR'
 VIEWER_PREFIX = '/mammography-viewer/'
 
 import os
@@ -51,7 +51,7 @@ os.makedirs(VIEWER_DIR, exist_ok = True)
 
 download.get(os.path.join(VIEWER_DIR, '%s.zip' % STONE_VERSION),
              'https://github.com/jodogne/orthanc-mammography/raw/master/viewer/%s.zip' % STONE_VERSION,
-             4742571, 'de952da6fc74a9d4b78ca5064a6a7318')
+             4815178, '86b52a17f86e4769d12e9ae680c4a99f')
 
 import zipfile
 stone_assets = zipfile.ZipFile(os.path.join(VIEWER_DIR, '%s.zip' % STONE_VERSION))
